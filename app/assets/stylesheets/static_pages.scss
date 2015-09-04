@@ -1,0 +1,76 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*
+============================
+Background Styling
+============================
+*/
+
+body {
+  background-color:white;
+  background-image: linear-gradient(90deg, rgba(200,0,0,.5) 50%, transparent 50%),
+  linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%);
+  background-size:50px 50px;
+}
+
+/*
+========================
+Grids
+========================
+*/
+
+.home-top-container {
+  margin-top: 22%;
+  text-align: center;
+
+}
+
+.home-mid-container {
+text-align: center;
+margin-top: 1%;
+}
+
+/*
+=======================
+Text Styling
+=======================
+*/
+
+.headline {
+  font-weight: 900;
+  font-size: 40px;
+  // text-outline: 2px 2px white;
+  text-shadow: 2px 0 0 black;
+  background-color: #faf8ef;
+  border-radius: 25px;
+  // border-top: 2px dashed #046ca3;
+	// border-bottom: 1px dashed #046ca3;
+  box-shadow: inset 2px 2px 2px 2px #3eb8f9, inset 2px 2px 2px 2px #3eb8f9, 2px 2px 2px 2px #3eb8f9, 2px 2px 2px 2px #3eb8f9;
+	padding-top: 40px;
+  color: #3eb8f9;
+  padding-bottom: 40px;
+
+}
+.navbar-styling {
+  margin-left: 40%;
+  width: 20%;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: inset 2px 2px 2px 2px #3eb8f9, inset 2px 2px 2px 2px #3eb8f9, 2px 2px 2px 2px #3eb8f9, 2px 2px 2px 2px #3eb8f9;
+  border-radius: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #faf8ef;
+}
+.navbar-styling a {
+  text-decoration: none;
+  color: rgb(214, 59, 44)
+}
+.navbar-styling a:hover {
+color: #3eb8f9
+}
+#bottom {
+  font-size: 80px;
+}

@@ -1,6 +1,10 @@
 class UsersController < ApplicationController
   def index
     @users = User.all
+    @users_array = []
+    @users.each do |name|
+      @users_array << name.first_name
+    end
   end
 
   def show

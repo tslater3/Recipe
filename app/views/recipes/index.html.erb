@@ -1,35 +1,40 @@
-<div class="top-container">
-  <h1 class="header">All Recipes</h1>
-</div>
+<body class="static-pages-body">
 
-<div class="left-container">
-  <ul class="navbar">
-    <li><%= link_to 'Home', root_path %></li>&nbsp&nbsp
-    <li><%= link_to 'About', about_path %></li>&nbsp&nbsp
-    <li><%= link_to 'All Users', users_path %></li>&nbsp&nbsp
-    <li><%= link_to 'All Recipes', recipes_path %></li>&nbsp&nbsp
-  </ul>
-</div>
+    <div class="top-container">
+      <h1 class="header">All Recipes</h1>
+    </div>
 
-<div class="right-container">
-  <table width ='300' class="box">
-    <tbody>
+    <div class="left-container">
+      <ul class="navbar">
+        <li><%= link_to 'Home', root_path %></li>&nbsp&nbsp
+        <li><%= link_to 'About', about_path %></li>&nbsp&nbsp
+        <li><%= link_to 'All Users', users_path %></li>&nbsp&nbsp
+        <li><%= link_to 'All Recipes', recipes_path %></li>&nbsp&nbsp
+      </ul>
+    </div>
 
-       <tr>
-         <td><img src="http://www.skykomishhotel.com/wp-content/uploads/2013/06/Discipline-1950s.jpeg" class="gross"></img><%= @recipe_array.sample %>></td>
-         <td><%= @recipe_array.sample %><img src="http://www.skykomishhotel.com/wp-content/uploads/2013/06/Discipline-1950s.jpeg" class="gross"></img></td>
-         <td><%= @recipe_array.sample %><img src="http://www.skykomishhotel.com/wp-content/uploads/2013/06/Discipline-1950s.jpeg" class="gross"></img></td>
-       </tr>
-       <tr>
-         <td><%= link_to "#{@recipe_array.sample}", root_path %><img src="http://www.skykomishhotel.com/wp-content/uploads/2013/06/Discipline-1950s.jpeg" class="gross"></img></td>
-         <td><%= @recipe_array.sample %><img src="http://www.skykomishhotel.com/wp-content/uploads/2013/06/Discipline-1950s.jpeg" class="gross"></img></td>
-         <td><%= @recipe_array.sample %><img src="http://www.skykomishhotel.com/wp-content/uploads/2013/06/Discipline-1950s.jpeg" class="gross"></img></td>
-       </tr>
-       <tr>
-         <td><%= @recipe_array.sample %><img src="http://www.skykomishhotel.com/wp-content/uploads/2013/06/Discipline-1950s.jpeg" class="gross"></img></td>
-         <td><%= @recipe_array.sample %><img src="http://www.skykomishhotel.com/wp-content/uploads/2013/06/Discipline-1950s.jpeg" class="gross"></img></td>
-         <td><%= @recipe_array.sample %><img src="http://www.skykomishhotel.com/wp-content/uploads/2013/06/Discipline-1950s.jpeg" class="gross"></img></td>
-       </tr>
-    </tbody>
-  </table>
-</div>
+    <div class="right-container">
+      <div class="table-styling">
+        <table width ='300' class ="box">
+          <tbody>
+
+             <tr>
+               <td><img class="images" src ="http://shelharrington.com/wp-content/uploads/2013/05/Father-Knows-Best.jpg"> </img> <%= @recipe_array.sample %></td>
+               <td><img class="images" src ="http://shelharrington.com/wp-content/uploads/2013/05/Father-Knows-Best.jpg"> </img><%= @recipe_array.sample %></td>
+               <td><img class="images" src ="http://shelharrington.com/wp-content/uploads/2013/05/Father-Knows-Best.jpg"> </img><%= @recipe_array.sample %></td>
+             </tr>
+             <tr>
+               <td><img class="images" src ="http://shelharrington.com/wp-content/uploads/2013/05/Father-Knows-Best.jpg"> </img><%= @recipe_array.sample %></td>
+               <td><img class="images" src ="http://shelharrington.com/wp-content/uploads/2013/05/Father-Knows-Best.jpg"> </img><%= @recipe_array.sample %></td>
+               <td><img class="images" src ="http://shelharrington.com/wp-content/uploads/2013/05/Father-Knows-Best.jpg"> </img><%= @recipe_array.sample %></td>
+             </tr>
+             <tr>
+               <td><img class="images" src ="http://shelharrington.com/wp-content/uploads/2013/05/Father-Knows-Best.jpg"> </img><%= @recipe_array.sample %></td>
+               <td><img class="images" src ="http://shelharrington.com/wp-content/uploads/2013/05/Father-Knows-Best.jpg"> </img><%= @recipe_array.sample %></td>
+               <td><img class="images" src ="http://shelharrington.com/wp-content/uploads/2013/05/Father-Knows-Best.jpg"> </img><%= @recipe_array.sample %></td>
+             </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+</body>

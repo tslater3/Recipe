@@ -1,12 +1,57 @@
-<h1>ALL USERS</h1>
-<%= link_to 'New User', new_user_path %>
-  <% @users.each do |user| %>
-    <h2><%= user.first_name %></h2>
-    <h2><%= user.last_name %></h2>
-    <h4><%= user.email_address%></h4>
-    <p><%= user.description %></p>
+<body class="static-pages-body">
 
-  <%= link_to 'Show User', user_path(user) %>
-  <%= link_to 'Edit User', edit_user_path(user) %>
-  <%= link_to 'Delete User', user, method: :delete %>
-<% end %>
+  <div class="top-container">
+    <h1 class="header">All Users</h1>
+  </div>
+
+
+  <div class="left-container">
+    <ul class="navbar">
+      <li><%= link_to 'Home', root_path %></li>&nbsp&nbsp
+      <li><%= link_to 'About', about_path %></li>&nbsp&nbsp
+      <li><%= link_to 'All Users', users_path %></li>&nbsp&nbsp
+      <li><%= link_to 'All Recipes', recipes_path %></li>&nbsp&nbsp
+      <li><%= link_to 'New User', new_user_path %></li>
+    </ul>
+  </div>
+
+  <div class="right-container">
+    <div class="table-styling">
+      <table width ='300' class ="box">
+           <tr>
+             <td><%= @users_array.sample %></td>
+             <td><%= @users_array.sample %></td>
+             <td><%= @users_array.sample %></td>
+           </tr>
+           <tr>
+             <td><%= @users_array.sample %></td>
+             <td><%= @users_array.sample %></td>
+             <td><%= @users_array.sample %></td>
+           </tr>
+           <tr>
+             <td><%= @users_array.sample %>
+             <td><%= @users_array.sample %></td>
+             <td><%= @users_array.sample %></td>
+           </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="right-container">
+    <div class="position, table-styling">
+      <% @users.each do |user| %>
+         <ul>
+            <li>First name: <%= user.first_name %></li>
+            <li>Last Name:  <%= user.last_name %></li>
+            <li>Email Address: <%= user.email_address %></li>
+            <li>Description: <%= user.description %></li>
+            <br>
+            <li><%= link_to 'Show User', user_path(user) %>
+                <%= link_to 'Edit User', edit_user_path(user) %>
+                <%= link_to 'Delete User', user, method: :delete %></li>
+        </ul>
+        <br>
+      <% end %>
+    </div>
+  </div>

@@ -1,2 +1,26 @@
-<h1>StaticPages#About</h1>
-<p>Find me in app/views/static_pages/About.html.erb</p>
+<body class ="static-pages-body">
+  <div class="top-container">
+    <div class="headline">
+      <h1>~About Us~</h1>
+    </div>
+  </div>
+
+  <div class="about-left-container">
+    <ul class="navbar">
+      &nbsp
+      <li><%= link_to 'Home', root_path %></li>&nbsp
+      <li><%= link_to 'About', about_path %></li>&nbsp
+      <li><%= link_to 'All Users', users_path %></li>&nbsp
+      <li><%= link_to 'All Recipes', recipes_path %></li>&nbsp
+    </ul>
+  </div>
+
+  <div class ="about-right-container">
+     <p class ="about-us">
+      Want to impress the PTA?? Do you enjoy loaves of all varieties??? Have you heard of a Frosted Ribbon Loaf? No? Well, you've come to the right
+      place! Feel free to add your 1950's inspired disasters as you wish.
+      <img src="https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xpf1/t31.0-8/327287_10150780174845068_4954831_o.jpg" class="grosser"></img>
+      <img src="https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/1931023_510633734969_7394_n.jpg?oh=d5507daaf775565b30588a0c8a705ee8&oe=5667A0D7" class = "gross"></img>
+     </p>
+  </div>
+</body>

@@ -1,14 +1,35 @@
-<h1>Recipes#index</h1>
-<p>Find me in app/views/recipes/index.html.erb</p>
-<%= link_to 'New Recipe', new_recipe_path %>
+<div class="top-container">
+  <h1 class="header">All Recipes</h1>
+</div>
 
-<% @recipes.each do |recipe| %>
-  <h2><%= recipe.name %></h2>
-  <h2><%= recipe.prep_time %></h2>
-  <h4><%= recipe.occasion%></h4>
-  <p><%= recipe.description %></p>
-  <h4><%= recipe.ethnicity %></h4>
-  <%= link_to 'Show recipe', recipe_path(recipe) %>
-  <%= link_to 'Edit recipe', edit_recipe_path(recipe) %>
-  <%= link_to 'Delete recipe', recipe, method: :delete %>
-<% end %>
+<div class="left-container">
+  <ul class="navbar">
+    <li><%= link_to 'Home', root_path %></li>&nbsp&nbsp
+    <li><%= link_to 'About', about_path %></li>&nbsp&nbsp
+    <li><%= link_to 'All Users', users_path %></li>&nbsp&nbsp
+    <li><%= link_to 'All Recipes', recipes_path %></li>&nbsp&nbsp
+  </ul>
+</div>
+
+<div class="right-container">
+  <table width ='300' class="box">
+    <tbody>
+
+       <tr>
+         <td><img src="http://www.skykomishhotel.com/wp-content/uploads/2013/06/Discipline-1950s.jpeg" class="gross"></img><%= @recipe_array.sample %>></td>
+         <td><%= @recipe_array.sample %><img src="http://www.skykomishhotel.com/wp-content/uploads/2013/06/Discipline-1950s.jpeg" class="gross"></img></td>
+         <td><%= @recipe_array.sample %><img src="http://www.skykomishhotel.com/wp-content/uploads/2013/06/Discipline-1950s.jpeg" class="gross"></img></td>
+       </tr>
+       <tr>
+         <td><%= link_to "#{@recipe_array.sample}", root_path %><img src="http://www.skykomishhotel.com/wp-content/uploads/2013/06/Discipline-1950s.jpeg" class="gross"></img></td>
+         <td><%= @recipe_array.sample %><img src="http://www.skykomishhotel.com/wp-content/uploads/2013/06/Discipline-1950s.jpeg" class="gross"></img></td>
+         <td><%= @recipe_array.sample %><img src="http://www.skykomishhotel.com/wp-content/uploads/2013/06/Discipline-1950s.jpeg" class="gross"></img></td>
+       </tr>
+       <tr>
+         <td><%= @recipe_array.sample %><img src="http://www.skykomishhotel.com/wp-content/uploads/2013/06/Discipline-1950s.jpeg" class="gross"></img></td>
+         <td><%= @recipe_array.sample %><img src="http://www.skykomishhotel.com/wp-content/uploads/2013/06/Discipline-1950s.jpeg" class="gross"></img></td>
+         <td><%= @recipe_array.sample %><img src="http://www.skykomishhotel.com/wp-content/uploads/2013/06/Discipline-1950s.jpeg" class="gross"></img></td>
+       </tr>
+    </tbody>
+  </table>
+</div>

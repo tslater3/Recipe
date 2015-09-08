@@ -1,3 +1,60 @@
 // Place all the styles related to the recipes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+/* Grid */
+.top-container {
+  margin-top: 6%;
+  margin-bottom: 3%;
+}
+
+.left-container {
+  margin-left: 2%;
+  // margin-right: 4%;
+  width: 20%;
+  background-color: orange;
+  display: inline-block;
+  float:left;
+
+}
+
+.right-container {
+// margin-left: 2%;
+// float: right;
+// width: 70%;
+// margin-top: 5%;
+margin-bottom: 20%;
+display: inline-block;
+margin-left: 4.6%;
+// -webkit-column-count: 3;
+//    -moz-column-count: 3;
+//         column-count: 3;
+}
+
+.box {
+
+  column-span: 1;
+  max-height: 30%;
+  max-width: 30%;
+  border: solid none;
+  border-collapse: separate;
+  border-spacing: 100px 30px;
+  font-size: 150%;
+  text-align: center;
+
+}
+
+
+/*Styling */
+.header {
+  text-align: center;
+  font-size: 350%;
+}
+
+.navbar {
+  font-size: 100%;
+  text-align: center;
+
+}

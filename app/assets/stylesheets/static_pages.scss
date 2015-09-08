@@ -8,28 +8,53 @@ Background Styling
 ============================
 */
 
-body {
+.static-pages-body {
   background-color:white;
   background-image: linear-gradient(90deg, rgba(200,0,0,.5) 50%, transparent 50%),
   linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%);
   background-size:50px 50px;
 }
 
+
+
 /*
 ========================
-Grids
+Home Grids
 ========================
 */
 
 .home-top-container {
   margin-top: 22%;
   text-align: center;
-
 }
 
 .home-mid-container {
 text-align: center;
 margin-top: 1%;
+}
+
+.about-left-container {
+  margin-left: 2%;
+  margin-right: 4%;
+  width: 15%;
+  display: inline-block;
+}
+/*
+========================
+About Grids
+========================
+*/
+
+.top-container {
+  margin-top: 6%;
+  margin-bottom: 3%;
+
+}
+.about-right-container {
+  width: 60%;
+  display: inline-block;
+  float:right;
+
 }
 
 /*
@@ -51,8 +76,28 @@ Text Styling
 	padding-top: 40px;
   color: #3eb8f9;
   padding-bottom: 40px;
+  text-align: center;
+
 
 }
+
+.about-us {
+  box-shadow: inset 2px 2px 2px 2px #3eb8f9, inset 2px 2px 2px 2px #3eb8f9, 2px 2px 2px 2px #3eb8f9, 2px 2px 2px 2px #3eb8f9;
+  color: #3eb8f9;
+  float:right;
+  display: inline-block;
+  background-color: #faf8ef;
+  padding: 20px 20px 20px 20px;
+  border-radius: 25px;
+  text-align: left;
+  margin-left: -300px;
+  color:rgb(214, 59, 44) ;
+  font-weight: bolder;
+  text-shadow: 0.5px 0 0 black;
+
+}
+/*Home navbar */
+
 .navbar-styling {
   margin-left: 40%;
   width: 20%;
@@ -64,6 +109,7 @@ Text Styling
   padding-bottom: 10px;
   background-color: #faf8ef;
 }
+
 .navbar-styling a {
   text-decoration: none;
   color: rgb(214, 59, 44)
@@ -73,4 +119,48 @@ color: #3eb8f9
 }
 #bottom {
   font-size: 80px;
+}
+
+/* About navbar */
+.navbar {
+  box-shadow: inset 2px 2px 2px 2px #3eb8f9, inset 2px 2px 2px 2px #3eb8f9, 2px 2px 2px 2px #3eb8f9, 2px 2px 2px 2px #3eb8f9;
+  background-color: #faf8ef;
+  border-radius: 15px;
+  padding-top: 10px;
+  font-size: 150%;
+  text-shadow: 1px 0 0 black;
+  color: #3eb8f9;
+  line-height: 200%;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(214, 59, 44)
+}
+a:hover {
+  color: #3eb8f9;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Gross-Ass Pictures */
+
+.gross {
+  float:left;
+  max-height: 40%;
+  max-width: 40%;
+}
+
+.grosser {
+  max-height: 40%;
+  max-width: 40%;
+  float:right;
 }

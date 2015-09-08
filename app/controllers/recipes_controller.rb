@@ -1,7 +1,13 @@
 class RecipesController < ApplicationController
   def index
     @recipes = Recipe.all
+
+    @recipe_array = []
+    @recipes.each do |name|
+      @recipe_array << name.name
+    end
   end
+
 
   def show
     @recipe = Recipe.find(params[:id])
